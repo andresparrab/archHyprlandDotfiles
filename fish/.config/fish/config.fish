@@ -2,9 +2,9 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 nvm use v19.2.0
-fish_add_path /home/loco/.local/bin
-fish_add_path /home/loco/.dotnet/tools
-set --export POSH_THEME /home/loco/.poshthemes/night-owl.omp.json
+fish_add_path $HOME/.local/bin
+fish_add_path $HOME/.dotnet/tools
+set --export POSH_THEME $HOME/.poshthemes/night-owl.omp.json
 set --global POWERLINE_COMMAND "oh-my-posh"
 set --global POSH_PID $fish_pid
 set --global CONDA_PROMPT_MODIFIER false
