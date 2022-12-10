@@ -1,9 +1,40 @@
 #!/usr/bin/bash 
 # Install dependencies for lunarvim
-# sudo pacman -Syyu --noconfirm
-sudo pacman --noconfirm --needed -S python python-pip cmake unzip ninja tree-sitter curl neovim rustup flake8 fish fisher exa dotnet-sdk aspnet-runtime aspnet-runtime-6.0 fzf ghc stow wlogout sddm
+sudo pacman -Syyu --noconfirm
+
+# Install dependencies for lunarvim
+sudo pacman --noconfirm --needed -S python python-pip cmake unzip ninja tree-sitter curl neovim rustup flake8 fish fisher exa dotnet-sdk aspnet-runtime aspnet-runtime-6.0 fzf ghc stow wlogout sddm paru
 
 rustup default stable
+
+# Install hyprland dependencies
+paru -S hyprland-git waybar-hyprland-git cava waybar-mpris-git python rustup kitty wofi xdg-desktop-portal-wlr tty-clock-git swaylockd grim slurp pokemon-colorscripts-git starship jq dunst wl-clipboard swaylock-effects-git
+
+git clone -b dreamy https://github.com/flick0/dotfiles
+cd dotfiles
+cp -r ./config/* ~/.config
+
+mkdir ~/.config/hypr/store
+touch ~/.config/hypr/store/dynamic_out.txt
+touch ~/.config/hypr/store/prev.txt
+touch ~/.config/hypr/store/latest_notif
+
+chmod +x ~/.config/hypr/scripts/tools/*
+chmod +x ~/.config/hypr/scripts/*
+chmod +x ~/.config/hypr/*
+
+# swww wallpaper changer/daemon
+git clone -b bezier https://github.com/flick0/swww
+cd swww
+cargo build --release
+cp ./target/release/swww ~/.config/hypr/scripts/tools/
+
+# Rgb borders
+git clone https://github.com/flick0/rgb-rs
+cd rgb-rs
+cargo build --release
+cp ./target/release/rgb ~/.config/hypr/scripts/
+
 
 chsh -s /usr/bin/fish
 
