@@ -1,7 +1,7 @@
 #!/usr/bin/bash 
 # Install dependencies for lunarvim
 # sudo pacman -Syyu --noconfirm
-sudo pacman --noconfirm --needed -S python python-pip cmake unzip ninja tree-sitter curl neovim rustup flake8 fish fisher exa dotnet-sdk aspnet-runtime aspnet-runtime-6.0 fzf ghc
+sudo pacman --noconfirm --needed -S python python-pip cmake unzip ninja tree-sitter curl neovim rustup flake8 fish fisher exa dotnet-sdk aspnet-runtime aspnet-runtime-6.0 fzf ghc stow wlogout sddm
 
 rustup default stable
 
@@ -50,7 +50,7 @@ bash
 LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 git clone https://github.com/andresparrab/nvim.git
 
-mkdir  .config/nvim
-cp -r nvim/nvim/* .config/nvim/
+#mkdir  .config/nvim
+#cp -r nvim/nvim/* .config/nvim/
 
 # install latest stable ghc package from [community] or 2) install ncurses5-compat-libs from AUR for the prebuilt binaries installed by stack to work.
