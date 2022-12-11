@@ -5,7 +5,7 @@ local dap = require 'dap'
 
 dap.adapters.coreclr = {
   type = 'executable',
-  command = '/home/vostro/.local/share/nvim/mason/bin/netcoredbg',
+  command = '/home/loco/.local/share/nvim/mason/bin/netcoredbg',
   args = {'--interpreter=vscode'}
 }
 
