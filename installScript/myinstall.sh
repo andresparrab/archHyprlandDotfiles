@@ -3,7 +3,7 @@
 sudo pacman -Syyu --noconfirm
 
 # Install dependencies for lunarvim
-sudo pacman --noconfirm --needed -S python python-pip cmake unzip ninja tree-sitter curl neovim rustup flake8 fish fisher exa dotnet-sdk aspnet-runtime aspnet-runtime-6.0 fzf ghc stow wlogout sddm paru
+sudo pacman --noconfirm --needed -S python python-pip cmake unzip ninja tree-sitter ripgrep curl neovim rustup flake8 fish fisher exa dotnet-sdk aspnet-runtime aspnet-runtime-6.0 fzf ghc stow wlogout sddm paru gvfs-smb thunar thefuck
 
 rustup default stable
 
