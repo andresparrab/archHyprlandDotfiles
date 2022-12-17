@@ -1,6 +1,6 @@
 (defwindow notifications
     :geometry (geometry :x "0px"
-                        :y "10px"
+                        :y "0px"
                         :width "1px"
                         :height "93%"
                         :anchor "bottom right")
@@ -21,7 +21,7 @@
 
 (defwidget rightside [] 
     (box
-        :class "rightside" 
+        :class "side" 
         :orientation "v" 
         :space-evenly "false" 
         :spacing "10"
