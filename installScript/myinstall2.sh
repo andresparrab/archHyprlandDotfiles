@@ -1,4 +1,4 @@
-# #!/usr/bin/
+#!/usr/bin/
 # #!/bin/bash
 # Install dependencies for lunarvim
 #sudo pacman -Syyu --noconfirm
@@ -10,6 +10,7 @@
 
 # Install hyprland dependencies
 #paru -S hyprland-git waybar-hyprland-git cava waybar-mpris-git python rustup kitty wofi xdg-desktop-portal-wlr tty-clock-git swaylockd grim slurp pokemon-colorscripts-git starship jq dunst wl-clipboard swaylock-effects-git
+ paru -S eww-wayland icons-in-terminal rofi-lbonn-wayland-git trayer mpvpaper macchina nitch nerd-fonts-inter socat geticons	
 
 #git clone -b dreamy https://github.com/flick0/dotfiles
 #cd dotfiles
@@ -68,11 +69,11 @@
 
 # install Whitegoose nvim dependencies
 
-pip install debugpy
-pip install jedi-language-server
-pip install jupyter_client
-dotnet tool install -g Microsoft.dotnet-interactive
-dotnet interactive jupyter install
+#pip install debugpy
+#pip install jedi-language-server
+#pip install jupyter_client
+#dotnet tool install -g Microsoft.dotnet-interactive
+#dotnet interactive jupyter install
 
 #add the paths to lunarvim
 #echo fish_add_path $HOME/.local/bin >> .config/fish/config.fish
