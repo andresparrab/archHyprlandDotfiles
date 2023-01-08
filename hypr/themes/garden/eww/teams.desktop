@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Microsoft Teams
+Exec=/opt/google/chrome/google-chrome "--profile-directory=Profile 2" --app-id=cifhbcnohmdccbgoicgdjpfamggdegmo
+Icon=chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Profile_2
+StartupWMClass=teams
+# StartupWMClass=crx_cifhbcnohmdccbgoicgdjpfamggdegmo

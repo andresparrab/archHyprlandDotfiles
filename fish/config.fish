@@ -1,7 +1,7 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
 	pokemon-colorscripts -r --no-title &
-	starship init fish | source &
+	# starship init fish | source &
 	thefuck --alias | source &
 	~/.config/fish/tty.sh &
 end
@@ -145,7 +145,7 @@ set XDG_CURRENT_DESKTOP sway
 
 # Created by `pipx` on 2022-09-11 05:02:32
 set PATH $PATH /home/flicko/.local/bin
-nvm use v19.2.0
+nvm use v19.3.0
 
 set --export POSH_THEME /home/loco/.poshthemes/night-owl.omp.json
 set --global POWERLINE_COMMAND "oh-my-posh"
