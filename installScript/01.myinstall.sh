@@ -1,8 +1,8 @@
 #!/usr/bin/
-#update system
+#update sysAtem
 sudo pacman -Syyu --noconfirm
 # Install dependencies for lunarvim and my apps
-sudo pacman --noconfirm --needed -S python python-pip cmake unzip ninja tree-sitter ripgrep curl neovim rustup flake8 fish fisher exa dotnet-sdk aspnet-runtime aspnet-runtime-6.0 fzf ghc sddm paru gvfs-smb thunar thefuck swappy viewnior tumbler brightnessctl lazygit vlc kodi jq grim slurp wl-clipboard socat dunst trayer waybg qt5-wayland kanshi swayidle
+sudo pacman --noconfirm --needed -S python python-pip cmake unzip ninja tree-sitter ripgrep curl neovim rustup flake8 fish fisher exa dotnet-sdk aspnet-runtime aspnet-runtime-6.0 fzf ghc sddm paru gvfs-smb thunar thefuck swappy viewnior tumbler brightnessctl lazygit vlc kodi jq grim slurp wl-clipboard socat dunst trayer swaybg qt5-wayland kanshi swayidle qt5-graphicaleffects qt5-quickcontrols
 rustup default stable
 # second line is for install packages to the garden themes and from https://github.com/taylor85345/hyprland-dotfiles
 paru -S hyprland-git eww-wayland icons-in-terminal rofi-lbonn-wayland-git mpvpaper macchina nitch nerd-fonts-inter geticons-git google-chrome wev networkmanager-dmenu-git

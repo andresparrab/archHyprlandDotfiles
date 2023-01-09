@@ -272,4 +272,4 @@ function enable_poshtransientprompt
 end
 fish_add_path /home/loco/.local/bin
 fish_add_path /home/loco/.dotnet/tools/
-oh-my-posh init fish --config ~/.poshthemes/night-owl.omp.json  | source
+oh-my-posh init fish --config ~/.poshthemes/atomic.omp.json  | source
